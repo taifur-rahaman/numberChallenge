@@ -26,8 +26,42 @@
     <title>Number Challenge</title>
   </head>
   <body>
-    <h1>Simple Calculator</h1>
+    <div class="container">
+      <div class="title">
+        <h1>Number Challenge</h1>
+      </div>
+      <div class="randomNum func">
+        <h1>random number generator</h1>
+
+        <div class="minmax">
+          <input type="number" name="" id="min" placeholder="Min" />
+          <input type="number" name="" id="max" placeholder="Max" />
+        </div>
+        <button id="btn" class="btn btn-generate">generate</button>
+        <h1 id="randomNum" class="result">NaN</h1>
+      </div>
+      <div class="calc func">
+        <h1>simple calculator</h1>
+        <div class="calculation">
+          <div class="operand firstNumber">
+            <input type="number" name="x" id="x" placeholder="Enter X" />
+          </div>
+          <div class="operator">
+            <span class="operator_element">+</span
+            ><span class="operator_element">-</span
+            ><span class="operator_element">*</span
+            ><span class="operator_element">/</span
+            ><span class="operator_element">%</span>
+          </div>
+          <div class="operand secondNumber">
+            <input type="number" name="y" id="y" placeholder="Enter Y" />
+          </div>
+        </div>
+        <h1 id="simpleCalc" class="result">NaN</h1>
+      </div>
+    </div>
     <!-- javaScript -->
-    <script src="./app.js"></script>
+    <script src="./random.js"></script>
+    <script src="./simpleCalc.js"></script>
   </body>
 </html>
