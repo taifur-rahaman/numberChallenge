@@ -8,6 +8,5 @@ btnGenerator.addEventListener("click", () => {
 });
 
 function randomNumber(min, max) {
-  console.log(typeof min, typeof max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
